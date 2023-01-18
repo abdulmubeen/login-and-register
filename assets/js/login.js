@@ -52,10 +52,9 @@ const registerUser = () => {
         });
          showAlert(
           "Account Registered!",
-          "Please return to the login page",
+          "Returning to the login page",
           "success"
         );
-        location.reload();
       })
       .catch((e) => {
         const errorCode = e.code;
@@ -63,6 +62,9 @@ const registerUser = () => {
         showAlert(errorCode, errorMessage, "danger");
       });
   }
+    setTimeout(() => {
+    window.location.reload();
+  }, 5000);
 };
 
 const loginUser = () => {
@@ -92,7 +94,7 @@ const loginUser = () => {
         showAlert("Please Wait", "Signing In", "info");
         setTimeout(() => {
           window.location.href = "../../sections/dashboard.html";
-        }, 3000);
+        }, 5000);
       })
       .catch((e) => {
         const errorCode = e.code;
@@ -121,7 +123,7 @@ const showAlert = (title, message, type) => {
   const myAlert = new bootstrap.Alert(ele);
   setTimeout(function () {
     myAlert.close();
-  }, 3000);
+  }, 5000);
 };
 //initialize login and register buttons
 const loginBtn = document.getElementById("loginBtn");
