@@ -50,6 +50,12 @@ const registerUser = () => {
           email: regEmail.value,
           date: regDate.value,
         });
+         showAlert(
+          "Account Registered!",
+          "Please return to the login page",
+          "success"
+        );
+        location.reload();
       })
       .catch((e) => {
         const errorCode = e.code;
