@@ -85,7 +85,7 @@ const loginUser = () => {
         });
         showAlert("Please Wait", "Signing In", "info");
         setTimeout(() => {
-          window.location.href = "../../dashboard.html";
+          window.location.href = "../../sections/dashboard.html";
         }, 3000);
       })
       .catch((e) => {
