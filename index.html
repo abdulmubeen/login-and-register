@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="Form my-5 mx-5">
+        <div class="container shadow-lg">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-5 img-col">
+                    <img src="assets/images/first.png" class="img-fluid" alt="illustration">
+                </div>
+                <div class="login-form col-lg-7 px-5 pt-5" id="login-form">
+                    <h1 class="fw-bold py-3 title">Sign In</h1>
+                    <form>
+                        <div class="mb-3 col-lg-7">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3 col-lg-7">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="my-4 col-lg-7">
+                            <button type="button" class="btn form-btn" id="loginBtn">Log In</button>
+                        </div>
+
+                    </form>
+                    <p class="bottom-text" id="registerLink">Don't have an account? <a href="#">Register Here</a></p>
+                </div>
+                <div class="signup-form col-lg-7 px-5 pt-5" id="signup-form">
+                    <h1 class="fw-bold py-3 title">Sign Up</h1>
+                    <form>
+                        <div class="mb-3 col-lg-7">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3 col-lg-7">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp"
+                                required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 col-lg-7">
+                            <label for="registerName" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="registerDOB" required>
+                        </div>
+                        <div class="mb-3 col-lg-7">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword"
+                                aria-describedby="passHelp" required>
+                            <div id="passHelp" class="form-text">Atleast 6 characters</div>
+                        </div>
+                        <div class="mb-3 col-lg-7">
+                            <label for="registerCPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="registerCPassword" required>
+                        </div>
+                        <div class="my-4 col-lg-7">
+                            <button type="button" class="btn form-btn" id="signupBtn">Sign Up</button>
+                        </div>
+
+                    </form>
+                    <p class="bottom-text" id="loginLink">Already have an account? <a href="#">Login Here</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="alert-container justify-content-center" style="z-index: 1;">
+
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/login.js"></script>
+</body>
+
+</html>

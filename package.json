@@ -1,0 +1,22 @@
+{
+  "name": "login_register",
+  "version": "1.0.0",
+  "description": "A simple login and register form using JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile-sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "login",
+    "register",
+    "javascript"
+  ],
+  "author": "Abdul Mubeen",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^5.3.0-alpha1",
+    "sass": "^1.57.1"
+  }
+}

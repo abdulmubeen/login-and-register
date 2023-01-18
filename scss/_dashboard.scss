@@ -1,0 +1,59 @@
+@use "custom" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.user-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-img {
+  border: 2px solid $primary;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $pink;
+  font-family: "Poppins", sans-serif;
+}
+
+.other-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e9348f;
+  font-family: "Poppins", sans-serif;
+}
+
+.user-email {
+  i {
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-right: 0.675rem;
+
+    color: #e9348f;
+  }
+}
+
+.user-date {
+  i {
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-right: 0.675rem;
+
+    color: #e9348f;
+  }
+}
+
+.close-btn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}

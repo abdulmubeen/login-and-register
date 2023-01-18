@@ -1,0 +1,30 @@
+@use "custom" as *;
+
+.title {
+  font-size: 2rem;
+}
+
+.form-label {
+  font-size: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.8rem;
+  }
+}
+
+.form-text {
+  font-size: 0.8rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.635rem;
+  }
+}
+
+.bottom-text {
+  font-size: 0.975rem;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.695rem;
+  }
+}
